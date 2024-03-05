@@ -1,0 +1,25 @@
+//
+// general.scss
+//
+
+/*********************************/
+/*     General-RTL               */
+/*===============================*/
+
+html {
+    direction: rtl;
+}
+
+body {
+    text-align: right;
+}
+
+//Switcher
+#style-switcher {
+    .t-rtl-light {
+        display: none;
+    }
+    .t-ltr-light {
+        display: inline-block;
+    }
+}

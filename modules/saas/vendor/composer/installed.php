@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'athlon1600/php-proxy' => array(
+            'pretty_version' => 'v5.2.0',
+            'version' => '5.2.0.0',
+            'reference' => 'dc8266db597c5b5e88a3ea5a8dbec00d20abe60a',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../athlon1600/php-proxy',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'plesk/api-php-lib' => array(
+            'pretty_version' => 'v2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => 'ce25ff423cb2b999f2259240cfdb2a4247c54ebc',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../plesk/api-php-lib',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

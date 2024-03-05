@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Tidy HTML Demo - Support</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="assets/css/vendors/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="c1924 c3m9y cmzdt cfc9i cb83m">
+<!-- Page wrapper -->
+<div class="cqd6z c3esx cg0ln cf7ka">
+    <!-- Site header -->
+    <header class="cz2pr cb3e5 cpuap cf3sj">
+        <div class="c8i2c csk5c c6axz crch5">
+            <div class="crmot c7baw cuzj2 cf7ka cmz8h">
+                <!-- Site branding -->
+                <div class="cvzb4 c3qvm">
+                    <!-- Logo -->
+                    <a class="block csbo8 czmuy csogj cqrft" href="index.html" aria-label="Cruip">
+                        <svg class="cwi8h coc8e cncsk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.25 4.116c.039.899-.51.468-.79.629-.894.524-1.491 2.04-2.612 2.125-.423.87-1.121.898-1.874 1.503-.327.256-.463.839-.756 1.097l-3.694 3.27a2.395 2.395 0 0 1-.44.314c-.378.219-.656.717-1.096.81-.475.106-1.601-.775-2.633-2.012-.825-1.587-.025-1.924.518-2.525.916-1.022 2.48-2.064 3.585-2.753.843-.537 1.677-1.13 2.59-1.482.935-.357 1.779-.842 2.738-1.041.7-.141 1.522.063 2.206 0a9.596 9.596 0 0 1 2.258.065M30.676 3.646c-.06 1.046-1.038.955-1.593 1.363C27.32 6.31 25.8 8.656 23.63 9.583c-1.07 1.412-2.411 1.952-4.056 3.254-.711.56-1.21 1.417-1.877 1.965-2.887 2.381-5.668 4.524-8.64 6.823-.303.236-.646.468-1.008.697-.834.528-1.675 1.394-2.543 1.77-.95.413-2.376-.279-3.375-1.544-.43-1.849 1.112-2.657 2.38-3.737 2.13-1.82 5.33-4.012 7.558-5.536 1.707-1.17 3.395-2.426 5.138-3.43 1.789-1.03 3.439-2.179 5.224-3.063 1.303-.643 2.758-.96 4.038-1.53a40.762 40.762 0 0 1 4.207-1.606M30.386 14.346c.229.918-.566.8-.896 1.136-1.048 1.058-1.721 3.056-3.254 3.7-.563 1.17-1.522 1.532-2.603 2.507-.464.426-.731 1.128-1.177 1.542-1.94 1.77-3.91 3.263-6.082 4.772a6.36 6.36 0 0 1-.748.43c-.618.313-1.24.914-1.901 1.065-.731.161-1.856-.807-2.662-2.199-.401-1.784.715-2.129 1.6-2.818 1.49-1.15 3.693-2.49 5.192-3.486 1.154-.755 2.247-1.633 3.417-2.292 1.2-.68 2.244-1.52 3.44-2.128.868-.448 1.927-.61 2.79-1.029.92-.447 1.873-.85 2.884-1.2"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- Desktop navigation -->
+                <nav class="cwllr cvcmx cppm7">
+                    <!-- Desktop menu links -->
+                    <ul class="c2hjl c7baw cdmjo cf7ka ce4hu">
+                        <li>
+                            <a class="c41b8 cnh95 cgo5b c3m9y c7baw czmuy ce1k1 csogj cqrft c4yk4 cf7ka cfxoz cgou5"
+                               href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="c41b8 cnh95 cgo5b c3m9y c7baw czmuy ce1k1 csogj cqrft c4yk4 cf7ka cfxoz cgou5"
+                               href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="c41b8 cnh95 cgo5b c3m9y c7baw czmuy ce1k1 csogj cqrft c4yk4 cf7ka cfxoz cgou5"
+                               href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a class="c41b8 cnh95 cgo5b c3m9y c7baw czmuy ce1k1 csogj cqrft c4yk4 cf7ka cfxoz cgou5"
+                               href="wall-of-love.html">Wall of Love</a>
+                        </li>
+                        <!-- 1st level: hover -->
+                        <li class="cfo6z" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+                            <a class="cgo5b c3m9y c7baw czmuy ce1k1 csogj cqrft c4yk4 cf7ka cfxoz cgou5" href="#0"
+                               aria-haspopup="true" :aria-expanded="open" @focus="open = true" @focusout="open = false"
+                               @click.prevent="">
+                                Resources
+                                <svg class="c3k0a cpm74 cdini cwi8h cvzb4 ccdep cbsa0 cvms3" viewBox="0 0 12 12"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z"></path>
+                                </svg>
+                            </a>
+                            <!-- 2nd level: hover -->
+                            <ul class="cqye9 ctmv6 cz2pr cmqsr cb83m cpz1g cet3v cbhht cue5e cgou5" x-show="open"
+                                x-transition:enter="cqrft csa0z c48t2 c0owj" x-transition:enter-start="ctnp1 ctsk5"
+                                x-transition:enter-end="cyb2a cxrsv" x-transition:leave="cqrft csa0z c48t2"
+                                x-transition:leave-start="cyb2a" x-transition:leave-end="ctnp1" x-cloak="">
+                                <li>
+                                    <a class="cnh95 cmwy4 cqdlv ce1k1 csthe cf7ka crch5 cgou5" href="404.html"
+                                       @focus="open = true" @focusout="open = false">404</a>
+                                </li>
+                                <li>
+                                    <a class="cnh95 cmwy4 cqdlv ce1k1 csthe cf7ka crch5 cgou5" href="support.html"
+                                       @focus="open = true" @focusout="open = false">Support</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Desktop sign in links -->
+                    <ul class="c7baw cyrls cdmjo cf7ka ce4hu">
+                        <li>
+                            <a class="c41b8 cnh95 cgo5b c3m9y c7baw czmuy ce1k1 csogj cqrft c4yk4 cf7ka cfxoz cgou5"
+                               href="signin.html">Sign in</a>
+                        </li>
+                        <li>
+                            <a class="csgal c8h4q csbo8 c7baw czmuy ce1k1 csogj cqrft c4yk4 ckqnn cf7ka cfxoz cgou5"
+                               href="request-demo.html">Request Demo <span
+                                    class="cxj7s c6fw3 cn4dr csbo8 czmuy csogj ccdep">-&gt;</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Mobile menu -->
+                <div class="cejlt cf7ka" x-data="{ expanded: false }">
+                    <!-- Hamburger button -->
+                    <button class="clbpj" :class="{ 'active': expanded }" @click.stop="expanded = !expanded"
+                            aria-controls="mobile-nav" :aria-expanded="expanded">
+                        <span class="czvty">Menu</span>
+                        <svg class="cko23 cyzmd cwi8h c251y cbk0d" viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect y="4" width="24" height="2"></rect>
+                            <rect y="11" width="24" height="2"></rect>
+                            <rect y="18" width="24" height="2"></rect>
+                        </svg>
+                    </button>
+                    <!-- Mobile navigation -->
+                    <nav id="mobile-nav" class="cacv1 c16oi cz2pr cmqsr cvbrt cb83m c3w6d cb3e5 cm00g c9tr1"
+                         @click.away="expanded = false" @keydown.escape.window="expanded = false" x-show="expanded"
+                         x-transition:enter="cqrft csa0z c48t2 c0owj" x-transition:enter-start="ctnp1 ctsk5"
+                         x-transition:enter-end="cyb2a cxrsv" x-transition:leave="cqrft csa0z c48t2"
+                         x-transition:leave-start="cyb2a" x-transition:leave-end="ctnp1" x-cloak="">
+                        <ul class="crch5 cgou5">
+                            <li>
+                                <a class="cnh95 c3m9y ce1k1 cf7ka cgou5" href="pricing.html">Pricing</a>
+                            </li>
+                            <li>
+                                <a class="cnh95 c3m9y ce1k1 cf7ka cgou5" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="cnh95 c3m9y ce1k1 cf7ka cgou5" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a class="cnh95 c3m9y ce1k1 cf7ka cgou5" href="wall-of-love.html">Wall of Love</a>
+                            </li>
+                            <li class="cbdbo cyhmq cvcdo cvdpr cgou5">
+                                <span class="cnh95 c3m9y ce1k1 cf7ka cgou5">Resources</span>
+                                <ul class="cbfrx">
+                                    <li>
+                                        <a class="cnh95 cmwy4 ce1k1 csthe cf7ka cgou5" href="404.html">404</a>
+                                    </li>
+                                    <li>
+                                        <a class="cnh95 cmwy4 ce1k1 csthe cf7ka cgou5" href="support.html">Support</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="cnh95 c3m9y ce1k1 cb3e5 cf7ka cgou5" href="signin.html">Sign in</a>
+                            </li>
+                            <li>
+                                <a class="csbo8 ce1k1 ckqnn cf7ka cgou5" href="request-demo.html">Request Demo <span
+                                        class="cxj7s c6fw3 cn4dr csbo8 czmuy csogj ccdep">-&gt;</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Page content -->
+    <main class="ce4hu">
+        <!-- Hero -->
+        <section class="cfo6z">
+            <!-- Dark background -->
+            <div class="c9bis c9qr7 cz2pr c2f0a c8c2n" aria-hidden="true"></div>
+            <div class="c8i2c cfo6z csk5c c6axz c0q32">
+                <div class="c6bfs c0gcy cw0l3 cj21u">
+                    <!-- Section header -->
+                    <div class="culxg c1b04 c6axz">
+                        <h1 class="cjkol cn7oz ctw2n clwnt">Advice and answers from the Tidy Team</h1>
+                        <!-- Search form -->
+                        <form class="c7baw cfo6z cnlr1 cf7ka">
+                            <input type="search" class="cnz7j c163r cgccd cf02d c39pi ch5wl cb3e5 c0y5a cq91x"
+                                   placeholder="Search for articles…" aria-label="Search for articles">
+                            <button type="submit" class="c0ijs cz2pr c2f0a" aria-label="Search">
+                                <svg class="cvzb4 cbhht ckmyz c5xow clh46" viewBox="0 0 16 16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path class="csuhb"
+                                          d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm8.707 12.293a.999.999 0 11-1.414 1.414L11.9 13.314a8.019 8.019 0 001.414-1.414l2.393 2.393z"></path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content -->
+        <section class="c7ozn">
+            <div class="c8i2c csk5c c6axz c0q32">
+                <div class="cn3zo cfqnb">
+                    <!-- Articles -->
+                    <div class="c1b04 crem2 c6axz" data-aos-id-support="">
+                        <!-- Article-->
+                        <article class="ctmv6 cb83m cghzz cu60e" data-aos="fade-up"
+                                 data-aos-anchor="[data-aos-id-support]">
+                            <div class="cf7ka">
+                                <!-- Icon -->
+                                <div class="cbdbo c7baw csz0x cvzb4 c0ix2 cy1af cf7ka c1qlu">
+                                    <svg class="cijwh coc8e cncsk" viewBox="0 0 32 32">
+                                        <path d="M17 18h12v6h-4v8H7v-8H3v-6h12v-7a6 6 0 0 1-6-6V2h2c1.537 0 2.938.578 4 1.528V0h2v8.528A5.978 5.978 0 0 1 21 7h2v3a6 6 0 0 1-6 6v2Zm10 2H5v2h22v-2Zm-4 4H9v6h14v-6Zm-6-10a4 4 0 0 0 4-4V9a4 4 0 0 0-4 4v1Zm-2-5V8a4 4 0 0 0-4-4v1a4 4 0 0 0 4 4Z"></path>
+                                    </svg>
+                                </div>
+                                <!-- Content -->
+                                <div class="ce4hu">
+                                    <header>
+                                        <h2 class="cjkol cs789 cwnfe">
+                                            <a class="clnxd c4e82 c3m9y" href="#0">Getting Started with Tidy</a>
+                                        </h2>
+                                    </header>
+                                    <p class="cq15i c67zf">New to Tidy or feeling a little lost? Start here ;)</p>
+                                    <footer class="c7baw cf7ka">
+                                        <div class="chlb4 cmv3v cvzb4 ckmyz cf7ka">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-01.jpg" width="32" height="32"
+                                                 alt="Avatar 01">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-02.jpg" width="32" height="32"
+                                                 alt="Avatar 02">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-03.jpg" width="32" height="32"
+                                                 alt="Avatar 03">
+                                        </div>
+                                        <div class="cmwy4 ce1k1 csthe ce4hu"><a class="cnh95 c3m9y czmuy csogj cqrft"
+                                                                                href="#0">4 Articles</a> written by <a
+                                                class="cnh95 c3m9y czmuy csogj cqrft" href="#0">Anna L.</a>, and 2
+                                            others
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Article-->
+                        <article class="ctmv6 cb83m cghzz cu60e" data-aos="fade-up"
+                                 data-aos-anchor="[data-aos-id-support]" data-aos-delay="100">
+                            <div class="cf7ka">
+                                <!-- Icon -->
+                                <div class="cbdbo c7baw csz0x cvzb4 c0ix2 cy1af cf7ka c1qlu">
+                                    <svg class="cijwh coc8e cncsk" viewBox="0 0 32 32">
+                                        <path d="M25.324 22H22v-2h3.324a6 6 0 0 1 4.992 2.671l1.206 1.81-1.16.451-15.167 5.9a7 7 0 0 1-6.3-.619L0 24.55V14h3c2.994 0 5.922 1.078 7.5 3H15a6 6 0 0 1 6 6v1H8v-2h10.874A4.002 4.002 0 0 0 15 19H9.466l-.297-.443C8.123 16.995 5.612 16 3 16H2v7.451l7.97 5.075a5 5 0 0 0 4.5.442l13.996-5.444A4 4 0 0 0 25.324 22Zm-6.317-8.014a6.993 6.993 0 1 1 0-13.986 6.993 6.993 0 0 1 0 13.986Zm0-2a4.993 4.993 0 1 0 0-9.986 4.993 4.993 0 0 0 0 9.986ZM18 4h2v6h-2V4Z"></path>
+                                    </svg>
+                                </div>
+                                <!-- Content -->
+                                <div class="ce4hu">
+                                    <header>
+                                        <h2 class="cjkol cs789 cwnfe">
+                                            <a class="clnxd c4e82 c3m9y" href="#0">Account Access and Billing</a>
+                                        </h2>
+                                    </header>
+                                    <p class="cq15i c67zf">Managing your account; upgrading, downgrading and
+                                        cancellations, payments, etc.</p>
+                                    <footer class="c7baw cf7ka">
+                                        <div class="chlb4 cmv3v cvzb4 ckmyz cf7ka">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-01.jpg" width="32" height="32"
+                                                 alt="Avatar 01">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-04.jpg" width="32" height="32"
+                                                 alt="Avatar 04">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-05.jpg" width="32" height="32"
+                                                 alt="Avatar 05">
+                                        </div>
+                                        <div class="cmwy4 ce1k1 csthe ce4hu"><a class="cnh95 c3m9y czmuy csogj cqrft"
+                                                                                href="#0">7 Articles</a> written by <a
+                                                class="cnh95 c3m9y czmuy csogj cqrft" href="#0">Anna L.</a>, and 2
+                                            others
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Article-->
+                        <article class="ctmv6 cb83m cghzz cu60e" data-aos="fade-up"
+                                 data-aos-anchor="[data-aos-id-support]" data-aos-delay="200">
+                            <div class="cf7ka">
+                                <!-- Icon -->
+                                <div class="cbdbo c7baw csz0x cvzb4 c0ix2 cy1af cf7ka c1qlu">
+                                    <svg class="cijwh coc8e cncsk" viewBox="0 0 32 32">
+                                        <path d="M17.235 14H8a2 2 0 0 0-2 2v13h2v-3.446a3 3 0 0 1 .428-1.543l3.143-5.24.78.293 6.699 2.512a3 3 0 0 1 1.95 2.81V29h2v-6.134l2.234-8.191-4.76-2.33A4 4 0 0 1 17.236 14Zm-12.688-.02A5 5 0 0 1 0 9V8h2v1a3 3 0 0 0 3 3h12.235a2 2 0 0 0 1.748-1.029l4.787-8.616 2.723 2.724L32 6.18V9a4 4 0 0 1-4 4h-.236L25 23.134V31h-6v-6.614a1 1 0 0 0-.651-.937l-5.92-2.22-2.287 3.81a1 1 0 0 0-.142.515V31H4V16c0-.737.2-1.427.547-2.02Zm16.926-3.372 4.297 2.102.466-1.71H28a2 2 0 0 0 2-2V7.82l-4.493-.899-1.277-1.276-2.757 4.963ZM17 8h1v2h-1a9 9 0 0 1-9-9V0h2v1a7 7 0 0 0 7 7Z"></path>
+                                    </svg>
+                                </div>
+                                <!-- Content -->
+                                <div class="ce4hu">
+                                    <header>
+                                        <h2 class="cjkol cs789 cwnfe">
+                                            <a class="clnxd c4e82 c3m9y" href="#0">Best Practices</a>
+                                        </h2>
+                                    </header>
+                                    <p class="cq15i c67zf">Practical platform tips and recommendations.</p>
+                                    <footer class="c7baw cf7ka">
+                                        <div class="chlb4 cmv3v cvzb4 ckmyz cf7ka">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-06.jpg" width="32" height="32"
+                                                 alt="Avatar 06">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-02.jpg" width="32" height="32"
+                                                 alt="Avatar 02">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-03.jpg" width="32" height="32"
+                                                 alt="Avatar 03">
+                                        </div>
+                                        <div class="cmwy4 ce1k1 csthe ce4hu"><a class="cnh95 c3m9y czmuy csogj cqrft"
+                                                                                href="#0">2 Articles</a> written by <a
+                                                class="cnh95 c3m9y czmuy csogj cqrft" href="#0">Kevin P.</a>, and 2
+                                            others
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Article-->
+                        <article class="ctmv6 cb83m cghzz cu60e" data-aos="fade-up"
+                                 data-aos-anchor="[data-aos-id-support]" data-aos-delay="300">
+                            <div class="cf7ka">
+                                <!-- Icon -->
+                                <div class="cbdbo c7baw csz0x cvzb4 c0ix2 cy1af cf7ka c1qlu">
+                                    <svg class="cijwh coc8e cncsk" viewBox="0 0 32 32">
+                                        <path d="M27.37 6.045a7.835 7.835 0 0 1-.663 10.326l-2.876 2.874L12.755 8.169l.707-.707 2.167-2.17a7.835 7.835 0 0 1 10.326-.662L30 .586 31.414 2 27.37 6.045Zm-1.986.755-.184-.184a5.833 5.833 0 0 0-8.157.09l-1.46 1.463 8.248 8.248 1.462-1.46a5.834 5.834 0 0 0 .09-8.157ZM4.63 25.955a7.835 7.835 0 0 1 .663-10.326l2.876-2.874 2.83 2.83 3.001-3L15.414 14l-3 3L15 19.586l3-3L19.414 18l-3 3 2.831 2.832-.707.707-2.167 2.168a7.835 7.835 0 0 1-10.326.663L2 31.414.586 30l4.044-4.045Zm1.986-.755.184.184a5.833 5.833 0 0 0 8.157-.09l1.46-1.462-8.248-8.25-1.462 1.461a5.834 5.834 0 0 0-.09 8.157Z"></path>
+                                    </svg>
+                                </div>
+                                <!-- Content -->
+                                <div class="ce4hu">
+                                    <header>
+                                        <h2 class="cjkol cs789 cwnfe">
+                                            <a class="clnxd c4e82 c3m9y" href="#0">API</a>
+                                        </h2>
+                                    </header>
+                                    <p class="cq15i c67zf">Find the most commonly asked questions about Tidy's API</p>
+                                    <footer class="c7baw cf7ka">
+                                        <div class="chlb4 cmv3v cvzb4 ckmyz cf7ka">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-01.jpg" width="32" height="32"
+                                                 alt="Avatar 01">
+                                        </div>
+                                        <div class="cmwy4 ce1k1 csthe ce4hu"><a class="cnh95 c3m9y czmuy csogj cqrft"
+                                                                                href="#0">2 Articles</a> written by <a
+                                                class="cnh95 c3m9y czmuy csogj cqrft" href="#0">Anna L.</a></div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Article-->
+                        <article class="ctmv6 cb83m cghzz cu60e" data-aos="fade-up"
+                                 data-aos-anchor="[data-aos-id-support]" data-aos-delay="400">
+                            <div class="cf7ka">
+                                <!-- Icon -->
+                                <div class="cbdbo c7baw csz0x cvzb4 c0ix2 cy1af cf7ka c1qlu">
+                                    <svg class="cijwh coc8e cncsk" viewBox="0 0 32 32">
+                                        <path d="M25 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM7 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm23 7.016a.995.995 0 0 0-.48-.856A8.838 8.838 0 0 0 24.98 11a8.702 8.702 0 0 0-4.493 1.146 1 1 0 0 0-.487.86l.001 1-2 .002-.001-1a3.007 3.007 0 0 1 1.476-2.587A10.68 10.68 0 0 1 24.985 9c1.937-.03 3.847.461 5.54 1.43A3 3 0 0 1 32 13.017V19h-8v-2h6v-3.984ZM2 17h6v2H0v-5.982a3.005 3.005 0 0 1 1.487-2.594A10.763 10.763 0 0 1 6.98 9a10.73 10.73 0 0 1 5.558 1.43A3 3 0 0 1 14 13.008l-.001 1-2-.002.001-1a.994.994 0 0 0-.472-.85A8.754 8.754 0 0 0 6.985 11a8.789 8.789 0 0 0-4.493 1.153 1 1 0 0 0-.492.864V17Zm14 15a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm-1-10h2L17 28h-2L15 20Z"></path>
+                                    </svg>
+                                </div>
+                                <!-- Content -->
+                                <div class="ce4hu">
+                                    <header>
+                                        <h2 class="cjkol cs789 cwnfe">
+                                            <a class="clnxd c4e82 c3m9y" href="#0">Other Tools</a>
+                                        </h2>
+                                    </header>
+                                    <p class="cq15i c67zf">Tutorials, FAQs and best practices with tools like Tidy Pro,
+                                        Tidy Tracker, and more.</p>
+                                    <footer class="c7baw cf7ka">
+                                        <div class="chlb4 cmv3v cvzb4 ckmyz cf7ka">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-01.jpg" width="32" height="32"
+                                                 alt="Avatar 01">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-04.jpg" width="32" height="32"
+                                                 alt="Avatar 04">
+                                            <img class="ckdx3 c2dps ca4zg c6am5"
+                                                 src="assets/images/support-avatar-05.jpg" width="32" height="32"
+                                                 alt="Avatar 05">
+                                        </div>
+                                        <div class="cmwy4 ce1k1 csthe ce4hu"><a class="cnh95 c3m9y czmuy csogj cqrft"
+                                                                                href="#0">5 Articles</a> written by <a
+                                                class="cnh95 c3m9y czmuy csogj cqrft" href="#0">Anna L.</a>, and 2
+                                            others
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Site footer -->
+    <footer>
+        <div class="c8i2c csk5c c6axz c0q32">
+            <!-- Top area: Blocks -->
+            <div class="cnm8v cd8g8 crb7e cvwwj c8wqu">
+                <!-- 1st block -->
+                <div class="cogxl cgzx3 cwhuo">
+                    <div class="cs789">
+                        <!-- Logo -->
+                        <a class="csbo8 czmuy c8qu4 csogj cqrft" href="index.html" aria-label="Cruip">
+                            <svg class="cwi8h coc8e cncsk" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.25 4.116c.039.899-.51.468-.79.629-.894.524-1.491 2.04-2.612 2.125-.423.87-1.121.898-1.874 1.503-.327.256-.463.839-.756 1.097l-3.694 3.27a2.395 2.395 0 0 1-.44.314c-.378.219-.656.717-1.096.81-.475.106-1.601-.775-2.633-2.012-.825-1.587-.025-1.924.518-2.525.916-1.022 2.48-2.064 3.585-2.753.843-.537 1.677-1.13 2.59-1.482.935-.357 1.779-.842 2.738-1.041.7-.141 1.522.063 2.206 0a9.596 9.596 0 0 1 2.258.065M30.676 3.646c-.06 1.046-1.038.955-1.593 1.363C27.32 6.31 25.8 8.656 23.63 9.583c-1.07 1.412-2.411 1.952-4.056 3.254-.711.56-1.21 1.417-1.877 1.965-2.887 2.381-5.668 4.524-8.64 6.823-.303.236-.646.468-1.008.697-.834.528-1.675 1.394-2.543 1.77-.95.413-2.376-.279-3.375-1.544-.43-1.849 1.112-2.657 2.38-3.737 2.13-1.82 5.33-4.012 7.558-5.536 1.707-1.17 3.395-2.426 5.138-3.43 1.789-1.03 3.439-2.179 5.224-3.063 1.303-.643 2.758-.96 4.038-1.53a40.762 40.762 0 0 1 4.207-1.606M30.386 14.346c.229.918-.566.8-.896 1.136-1.048 1.058-1.721 3.056-3.254 3.7-.563 1.17-1.522 1.532-2.603 2.507-.464.426-.731 1.128-1.177 1.542-1.94 1.77-3.91 3.263-6.082 4.772a6.36 6.36 0 0 1-.748.43c-.618.313-1.24.914-1.901 1.065-.731.161-1.856-.807-2.662-2.199-.401-1.784.715-2.129 1.6-2.818 1.49-1.15 3.693-2.49 5.192-3.486 1.154-.755 2.247-1.633 3.417-2.292 1.2-.68 2.244-1.52 3.44-2.128.868-.448 1.927-.61 2.79-1.029.92-.447 1.873-.85 2.884-1.2"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="c3m9y ck4fs cqevk">The smarter way to start your next idea.</div>
+                </div>
+                <!-- 2nd block -->
+                <div class="cdtqr ch96w czhfe">
+                    <h6 class="c3m9y c16wz csthe cs789">How it works</h6>
+                    <ul class="ce1k1 c63sm csthe">
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Overview</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Service Areas</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 3rd block -->
+                <div class="cdtqr ch96w czhfe">
+                    <h6 class="c3m9y c16wz csthe cs789">Resources</h6>
+                    <ul class="ce1k1 c63sm csthe">
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Customer Stories</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Knowledge Base</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 4th block -->
+                <div class="cdtqr ch96w czhfe">
+                    <h6 class="c3m9y c16wz csthe cs789">Products</h6>
+                    <ul class="ce1k1 c63sm csthe">
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Corporate Partners</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Secure Identity</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Legal Help</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">First Capital</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 5th block -->
+                <div class="cdtqr ch96w czhfe">
+                    <h6 class="c3m9y c16wz csthe cs789">Company</h6>
+                    <ul class="ce1k1 c63sm csthe">
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">About Us</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Careers</a>
+                        </li>
+                        <li>
+                            <a class="cnh95 cq15i czmuy csogj cqrft" href="#0">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bottom area -->
+            <div class="cy6ow cbdbo ckq44 cyhmq cwllr ctn3m cdiko">
+                <!-- Social links -->
+                <ul class="cn7ka cnejy coxwf c2aq3 c67zf cf7ka">
+                    <li>
+                        <a class="cnh95 cdx5r czmuy csogj cqrft" href="#0" aria-label="Twitter">
+                            <svg class="cwi8h czjsv cy6tr" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 3.897c-.75.33-1.5.577-2.333.66A4.4 4.4 0 0 0 19.5 2.33c-.833.495-1.667.825-2.583.99a4.053 4.053 0 0 0-3-1.32c-2.25 0-4.084 1.814-4.084 4.041 0 .33 0 .66.084.907-3.5-.164-6.5-1.814-8.5-4.288C1 3.32.833 3.98.833 4.722c0 1.402.75 2.639 1.834 3.381-.667 0-1.334-.165-1.834-.495v.083c0 1.98 1.417 3.629 3.25 3.958-.333.083-.666.165-1.083.165-.25 0-.5 0-.75-.082.5 1.65 2 2.804 3.833 2.804C4.667 15.608 2.917 16.268 1 16.268c-.333 0-.667 0-1-.082C1.833 17.34 4 18 6.25 18c7.583 0 11.667-6.186 11.667-11.546v-.495c.833-.578 1.5-1.32 2.083-2.062Z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cnh95 cdx5r czmuy csogj cqrft" href="#0" aria-label="Facebook">
+                            <svg class="cwi8h czjsv cy6tr" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10.025C20 4.491 15.52 0 10 0S0 4.491 0 10.025c0 4.852 3.44 8.892 8 9.825v-6.817H6v-3.008h2V7.52a3.508 3.508 0 0 1 3.5-3.509H14v3.008h-2c-.55 0-1 .45-1 1.002v2.005h3v3.008h-3V20c5.05-.501 9-4.772 9-9.975Z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cnh95 cdx5r czmuy csogj cqrft" href="#0" aria-label="Telegram">
+                            <svg class="cwi8h czjsv cy6tr" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.96 2.336a.421.421 0 0 0-.291-.308 1.543 1.543 0 0 0-.788.054S1.358 8.194.358 8.87c-.215.145-.288.23-.324.33-.173.485.366.694.366.694l4.517 1.428a.506.506 0 0 0 .229-.013c1.026-.63 10.332-6.335 10.873-6.527.083-.024.148 0 .131.061-.215.732-8.257 7.664-8.301 7.706a.16.16 0 0 0-.06.143l-.422 4.28s-.176 1.331 1.196 0a38.082 38.082 0 0 1 2.374-2.11c1.553 1.041 3.224 2.192 3.945 2.794.245.23.576.354.916.342.426-.05.774-.35.876-.754 0 0 3.192-12.471 3.298-14.142.011-.162.025-.268.027-.38.005-.13-.008-.26-.04-.387Z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cnh95 cdx5r czmuy csogj cqrft" href="#0" aria-label="Github">
+                            <svg class="cwi8h czjsv cy6tr" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.041 0C4.52 0 0 4.612 0 10.25c0 4.526 2.845 8.37 6.862 9.737.502.085.669-.257.669-.513v-1.708c-2.761.598-3.347-1.367-3.347-1.367-.419-1.196-1.088-1.537-1.088-1.537-1.004-.598 0-.598 0-.598 1.004.085 1.506 1.025 1.506 1.025.92 1.537 2.343 1.11 2.929.854.084-.683.335-1.11.67-1.367-2.26-.256-4.603-1.11-4.603-5.039 0-1.11.419-2.05 1.004-2.733 0-.342-.418-1.367.168-2.733 0 0 .836-.257 2.76 1.025.838-.257 1.674-.342 2.511-.342.837 0 1.674.085 2.51.342 1.925-1.367 2.762-1.025 2.762-1.025.586 1.452.167 2.477.084 2.733.669.683 1.004 1.623 1.004 2.733 0 3.93-2.343 4.783-4.603 5.04.335.341.67.939.67 1.879v2.818c0 .256.167.598.67.513 4.016-1.367 6.86-5.21 6.86-9.737C20.084 4.612 15.565 0 10.042 0Z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Copyrights note -->
+                <div class="cq15i csthe c3qvm">© Cruip.com. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="assets/js/vendors/alpinejs.min.js" defer=""></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+//
+// switcher.scss
+//
+#style-switcher {
+    transition: all 0.4s;
+	div {
+		h3 {
+			color: $dark;
+			font-size: 16px;
+			margin: 0 3px 12px;
+		}
+		padding: 5px 10px;
+	}
+    background: none repeat scroll 0 0 $white;
+    box-shadow: $shadow;
+	left: -189px;
+	position: fixed;
+	top: 17%;
+	width: 189px;
+	z-index: 9999;
+	padding: 10px 5px;
+	.bottom {
+        a {
+            &.settings {
+                background: none repeat scroll 0 0 $white;
+                height: 41px;
+                position: absolute;
+                right: -41px;
+                top: 0px;
+                width: 40px;
+                padding: 3px;
+                border-radius: 0 30px 30px 0;
+            }
+        }
+    }
+}
+ul {
+    &.pattern {
+        list-style: none outside none;
+        overflow: hidden;
+        padding: 0;
+        border-radius: 0px;
+        li {
+            &.list-inline-item:not(:last-child) {
+                margin-right: 0px;
+                margin-bottom: 0;
+            }
+            a {
+                cursor: pointer;
+                display: block;
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                margin: 3px;
+            }
+        }
+        .color1 {
+            background-color: $primary;
+        }
+        
+        .color2 {
+            background-color: $green;
+        }
+        
+        .color3 {
+            background-color: $purple;
+        }
+        
+        .color4 {
+            background-color: $red;
+        }
+        
+        .color5 {
+            background-color: $skyblue;
+        }
+        
+        .color6 {
+            background-color: $skobleoff;
+        }
+        
+        .color7 {
+            background-color: $cyan;
+        }
+        
+        .color8 {
+            background-color: $slateblue;
+        }
+        
+        .color9 {
+            background-color: $yellow;
+        }
+    }
+
+    .t-dark, 
+    .t-rtl-light {
+        display: inline-block;
+    }
+    .t-ltr-light,
+    .t-light,
+    .t-rtl-dark,
+    .t-ltr-dark {
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+	#style-switcher {
+		display: none;
+    }
+}

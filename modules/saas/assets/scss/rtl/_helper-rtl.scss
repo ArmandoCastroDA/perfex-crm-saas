@@ -1,0 +1,50 @@
+//
+// helper.scss
+//
+
+/*********************************/
+/*     Helper-RTL      */
+/*===============================*/
+
+.text-start {
+    text-align: right !important;
+}
+
+.text-end {
+    text-align: left !important;
+}
+
+.float-end {
+    float: left !important;
+}
+@media (min-width: 768px) {
+    .float-md-end {
+        float: left!important;
+    }
+    
+}
+
+.float-start {
+    float: right !important;
+}
+dd {
+    margin-right: 0 !important;
+}
+
+// Text Slider
+@keyframes moveSlideshow {
+    100% { 
+        transform: translateX(45%);  
+    }
+}
+
+
+//Cookies
+.cookie-popup {
+    .cookie-popup-actions {
+        button {
+            left: 5px !important;
+            right: auto;
+        }
+    }
+}

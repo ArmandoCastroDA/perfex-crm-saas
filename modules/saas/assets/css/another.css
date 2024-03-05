@@ -1,0 +1,36 @@
+.price-table.other-price-table.price-table-5.active {
+	border: inherit;
+	background-image: -moz-linear-gradient( 49deg, rgb(38,87,243) 0%, rgb(54,177,225) 100%);
+	background-image: -webkit-linear-gradient( 49deg, rgb(38,87,243) 0%, rgb(54,177,225) 100%);
+	background-image: -ms-linear-gradient( 49deg, rgb(38,87,243) 0%, rgb(54,177,225) 100%);
+  }
+  .price-table.other-price-table.price-table-5.active h4 {
+	color: #fff;
+  }
+  .price-table.other-price-table.price-table-5.active h3 {
+	color: #fff;
+  }
+  .price-table.other-price-table.price-table-5.active .price-content ul li {
+	color: #fff;
+  }
+  .price-table.other-price-table.price-table-5.active .price-content {
+	border-color: #e6efff;
+  }
+
+$('.ziko-screenshot-active').owlCarousel({
+		stagePadding: 380,
+		loop: true,
+		margin: 10,
+		nav: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 1
+			}
+		}
+	})

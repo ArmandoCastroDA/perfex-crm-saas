@@ -1,0 +1,201 @@
+//
+// menu.scss
+//
+
+/*********************************/
+/*          Menu-RTL             */
+/*===============================*/
+
+#topnav {
+    .logo {
+        float: right;
+    }
+    .has-submenu{
+        .submenu {
+            .submenu-arrow {
+                border-width: 2px 0px 0px 2px;
+                left: 20px;
+                right: auto;
+            }
+        }
+    }
+
+    .navbar-toggle {
+        .lines {
+            margin: 30px 10px 26px 0 !important;
+        }
+        span {
+            height: 2px;
+            width: 100%;
+            background-color: $dark;
+            display: block;
+            margin-bottom: 5px;
+            transition: transform .5s ease;   
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    //Buy button
+    .buy-button {
+        float: left;
+        padding: 0 0 6px;
+    }
+
+    .navigation-menu {
+        .has-submenu {
+            .menu-arrow {
+                left: -1px;
+                right: auto;
+            }
+        }
+    }
+    .menu-extras {
+        float: left;
+    }
+}
+
+.logo {
+    margin-right: auto;    
+    margin-left: 15px;
+}
+
+@media (min-width: 992px) {
+    #topnav {
+        .navigation-menu {
+            > li {
+                .submenu {
+                    right: 0;
+                    left: auto;
+                    li {
+                        ul {
+                            padding-right: 0;
+                            padding-left: auto;
+                        }
+                    }
+                    &.megamenu {
+                        right: 50% !important;
+                        left: 0;
+                        transform: translateX(50%);
+                        > li {
+                            .submenu {
+                                right: 100%;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    > li {
+                        .submenu {
+                            right: 101%;
+                            left: auto;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                &.last-elements {
+                    .submenu {
+                        right: auto;
+                        left: 0;
+                        &:before {
+                            right: auto;
+                            left: 35px;
+                        }
+                        > li.has-submenu .submenu {
+                            right: auto;
+                            left: 100%;
+                            margin-right: 0;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+            &.nav-left {
+                > li {
+                    &.last-elements {
+                        .submenu {
+                            left: auto !important;
+                            right: 0 !important;
+                            &:before {
+                                left: auto !important;
+                                right: 11px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .buy-button {
+            padding-right: 15px !important;
+            margin-right: 15px !important;
+            padding-left: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #topnav {
+        .navigation-menu {
+            > li {
+                .submenu {
+                    padding-right: 20px;
+                    &.megamenu {
+                        > li {
+                            > ul {
+                                padding-right: 0;
+                                padding-left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .has-submenu{
+            .submenu {
+                .submenu-arrow {
+                    left: 20px;
+                    right: auto;
+                }
+            }
+        }
+    }
+    #navigation {
+        right: 0;
+        left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #topnav {
+        .navigation-menu {
+            .has-submenu {
+                .menu-arrow {
+                    left: 8px;
+                    right: auto;
+                }
+                .submenu {
+                    .submenu-arrow {
+                        border-width: 0px 2px 2px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px){
+    #topnav {
+        .buy-menu-btn {
+            .dropdown {
+                .dropdown-menu {
+                    &.show {
+                        transform: translate3d(-197px, -54px, 0px) !important;
+                    }
+                }
+            }
+        }
+    }
+}

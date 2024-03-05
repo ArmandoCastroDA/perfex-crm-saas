@@ -1,0 +1,121 @@
+//
+// testi.scss
+//
+
+/*********************************/
+/*         Testimonial           */
+/*===============================*/
+
+.client-testi {
+    cursor: e-resize;
+    .client-image {
+        margin-right: 16px;
+    }
+    .content {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 0;
+            margin-left: 13px;
+            box-sizing: border-box;
+            border: 8px solid $dark;
+            border-color: transparent $white $white transparent;
+            transform-origin: 0 0;
+            transform: rotate(135deg);
+            box-shadow: 2px 2px 2px -1px rgba($dark, 0.15);
+        }
+    }
+}
+
+.tns-nav {
+    text-align: center;
+    margin-top: 10px;
+    button {
+        border-radius: 3px;
+        background: rgba($primary, 0.5) !important;
+        transition: all 0.5s ease;
+        border: none;
+        margin: 0 5px;
+        padding: 5px;
+        &.tns-nav-active {
+            background: $primary !important;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+//Tns control
+.tns-controls {
+    button[data-controls="prev"],
+    button[data-controls="next"] {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $white;
+        color: $dark;
+        border: none;
+        transition: all 0.5s ease;
+        z-index: 1;
+        box-shadow: $shadow-lg;
+        &:hover {
+            background: $primary;
+            color: $white;
+        }
+    }
+    button[data-controls="prev"] {
+        left: 0;
+    }
+    button[data-controls="next"] {
+        right: 0;
+    }
+}
+
+//Slick slider
+.slick-slider {
+    overflow-x: hidden !important;
+    cursor: pointer;
+}
+
+//Roadmap
+.tiny-timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 17px;
+        left: 0;
+        height: 2px;
+        background: $primary;
+    }
+    .item-box {
+        margin: 70px 15px 20px;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            background: $primary;
+        }
+        &:before {
+            width: 2px;
+            height: 46px;
+            top: -46px;
+            transform: translateX(-50%);
+        }
+        &:after {
+            width: 13px;
+            height: 13px;
+            top: -59px;
+            border-radius: 3px;
+            transform: translateX(-50%) rotate(45deg);
+        }
+    }
+}

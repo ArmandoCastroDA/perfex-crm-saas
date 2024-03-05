@@ -1,0 +1,15 @@
+//
+// general.scss
+//
+
+/*********************************/
+/*     General-DARK              */
+/*===============================*/
+
+body {
+    color: $dark;
+    background: $bg-body;
+}
+::selection {
+    color: $dark;
+}

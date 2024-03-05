@@ -1,0 +1,88 @@
+//
+// variables.scss
+//
+
+/*********************************/
+/*     Variables-DARK            */
+/*===============================*/
+
+// Color
+$white:                     #1c2836; //ffffff
+
+$dark:                      #ffffff; //3c4858
+$black:                     #161c2d;
+$muted:                     #9bacc4; //8492a6
+$light:                     #1f2d3d;
+
+// Gray
+$gray-100:                  #495057;
+$gray-200:                  #6c757d;
+$gray-300:                  #adb5bd;
+$gray-400:                  #ced4da;
+$gray-500:                  #dee2e6;
+$gray-600:                  #e9ecef;
+$gray-700:                  #f8f9fa;
+$gray-800:                  #2a3c51;
+
+// Overlay
+$overlay:                   rgba($white, 0.7);
+$gradident-overlay:         rgba($primary, 0.5);
+$bg-overlay-white:          rgba(0, 0, 0 , 0.4);
+
+//Body Background
+$shadow:                    0 0 3px rgba($dark,.15);
+$shadow-lg:                 0 10px 25px rgba($dark, 0.15);
+$shadow-md:                 0 5px 13px rgba($dark, .2);
+$footer:                    lighten($white, 3%); //#1b2838;
+$bg-body:                   $white;
+
+// Base font
+$font-size-base:            16px;
+
+$font-family-base:          'Nunito', sans-serif;
+$font-family-secondary:     'Nunito', sans-serif;
+
+//Color Picker/Switcher
+$default:                   #2f55d4;
+$green:                     #6dc77a;
+$red:                       #ff5b69;
+$purple:                    #7952B3;
+$skyblue:                   #32c2ec;
+$skobleoff:                 #0f7173;
+$cyan:                      #00c9a7;
+$slateblue:                 #766df4;
+$yellow:                    #f7961c;
+
+
+$colors: (
+    "white": $white,
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "info": $info,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "blue": $primary,
+    "footer": $footer,
+);
+
+$heading-font-sizes: (
+    "h1": 42px,
+    "h2": 36px,
+    "h3": 30px,
+    "h4": 24px,
+    "h5": 18px,
+    "h6": 16px,
+);
+
+$display-font-sizes: (
+    "display-1": 80px,
+    "display-2": 72px,
+    "display-3": 64px,
+    "display-4": 56px,
+    "display-5": 48px,
+    "display-6": 40px,
+)

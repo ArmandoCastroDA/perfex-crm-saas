@@ -1,0 +1,233 @@
+//
+// Bootstrap-custom.scss
+//
+
+/*********************************/
+/*         Bootstrap-custom      */
+/*===============================*/
+
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1140px !important;
+    }
+}
+
+.row > * {
+    position: relative;
+}
+
+@each $heading,
+$size in $heading-font-sizes {
+    #{$heading}, .#{$heading} {
+        font-size: $size !important;
+    }
+}
+
+@each $heading,
+$size in $display-font-sizes {
+    .#{$heading} {
+        font-size: $size !important;
+    }
+}
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+    .bg-soft-#{$name} {
+        background-color: rgba($value, 0.1) !important;
+        border: 1px solid rgba($value, 0.1) !important;
+        color: #{$value} !important;
+    }
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+    a {
+        &.text-#{$name} {
+            &:hover,
+            &:focus {
+                color: darken($value, 5%) !important;
+            }
+        }
+    }
+}
+
+.d-flex {
+    .flex-1 {
+        flex: 1;
+    }
+}
+
+.bg-black {
+    background: $black !important;
+}
+
+.text-white-50 {
+    color: rgba($white, 0.5);
+}
+
+//Video tag
+video {
+    &:focus {
+        outline: none;
+    }
+}
+
+//li (list inline item)
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+// Rounded
+.rounded {
+    border-radius: 6px !important;
+}
+.rounded-top {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+.rounded-left {
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+.rounded-bottom {
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+.rounded-right {
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+
+.rounded-md {
+    border-radius: 10px !important;
+}
+.rounded-lg {
+    border-radius: 30px !important;
+}
+
+//Border
+@each $name,
+$value in $colors {
+    .border-#{$name} {
+        border-color: #{$value} !important;
+    }
+}
+
+.border {
+    border: 1px solid $gray-200 !important;
+}
+.border-top {
+    border-top: 1px solid $gray-200!important;
+}
+.border-bottom {
+    border-bottom: 1px solid $gray-200 !important;
+}
+.border-left {
+    border-left: 1px solid $gray-200 !important;
+}
+.border-right {
+    border-right: 1px solid $gray-200 !important;
+}
+
+// Opacity
+.opacity-05 {
+    opacity: 0.05;
+}
+
+.opacity-075 {
+    opacity: 0.075;
+}
+
+.opacity-1 {
+    opacity: 0.1;
+}
+
+.opacity-2 {
+    opacity: 0.2;
+}
+
+.opacity-3 {
+    opacity: 0.3;
+}
+
+.opacity-4 {
+    opacity: 0.4;
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.opacity-6 {
+    opacity: 0.6;
+}
+
+.opacity-7 {
+    opacity: 0.7;
+}
+
+.opacity-8 {
+    opacity: 0.8;
+}
+
+.opacity-9 {
+    opacity: 0.9;
+}
+
+//Small
+.small, small {
+    font-size: 90%;
+}
+
+//card
+.card {
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+//Offcanvas
+.offcanvas {
+    .offcanvas-header {
+        .dark-version {
+            display: none;
+        }
+        .light-version {
+            display: inline-block;
+        }
+        .btn-close {
+            color: $dark;
+            background: none;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    &.offcanvas-end {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 56px !important;
+    }
+    .display-2 {
+        font-size: 50px !important;
+    }
+    .display-3 {
+        font-size: 42px !important;
+    }
+    .display-4 {
+        font-size: 36px !important;
+    }
+    .display-5 {
+        font-size: 30px !important;
+    }
+    .display-6 {
+        font-size: 24px !important;
+    }
+}
